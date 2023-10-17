@@ -1,0 +1,19 @@
+body{
+	font-family: arial;
+  em {
+  font-family: "Cascadia Mono"; 
+}
+}
+p{
+color: maroon;
+}
+
+h1, h2 {
+font-family: Arial;
+color:grey;
+	}
+	
+	
+h1 {
+border-bottom: 1px solid black;
+}

@@ -1,0 +1,25 @@
+body{
+    Verdana,Geneva,Arial, sans-serif;  
+    font-size: 12px;
+    
+    }
+
+h1{
+    font-size: 12px*2.2;
+    color: #CC6600 ;
+    font-style: underline;
+  }
+
+h2{
+    font-size: 12px*1.3;
+    font-weight: normal;
+    color: #CC6600;
+    font-style: underline;
+  }
+
+blockquote{
+font-style: italic ;
+}
+h1,h2{
+	border-bottom: thin dotted #888888;
+}

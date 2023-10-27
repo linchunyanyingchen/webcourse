@@ -1,0 +1,15 @@
+body{
+	background-color: rgb(25%, 40%, 88%);
+	background-color: rgb(65, 155, 225);
+}
+p {
+  font-style: italic;
+}
+
+body{
+	color: royalblue;
+	color: rgb(65, 105, 225);
+	color: #4169E1CC;
+	color: rgba(39,177,182,0.8);
+	color: #2775b6CC;
+}

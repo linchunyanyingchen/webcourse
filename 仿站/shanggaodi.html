@@ -7,26 +7,42 @@
   <link rel="stylesheet" type="text/css" href="shanggaodi.css">
 </head>
 <body>
-<div class="weather">
-<h2>上高地 <br>
-今日・明日の天気       
-</h2>
-<p>
-11/15  6:30 現在の天気<br>
-🌤  <br>
--5.5℃          
-</p>
-<p>
-今日の予報 <br>
-☁  <br>
-<span class="temp_min">0.3℃</span>
-<span class="temp_max">7.8℃</span>
-</p>
+<section class="weather">
+  <div class="l-container p-home-weather__inner">
+    <div class="p-home-weather__headline op-weather">
+      <h2 class="p-home-weather__headline op-weather">上高地 <br>
+        今日・明日の天気       
+      </h2>
+      <div id="js-home_weather" class="p-home-weather-condition__list">
+        <div class="p-home-weather-condition__item op-now">
+        <p class="p-home-weather-condition__head">
+          11/15  6:30 現在の天気
+        </p>
+        <figure class="p-home-weather-condition__icon">
+        ⛅
+        </figure>    
+        <p class="p-home-weather-condition__foot">
+        -5.5℃
+        </p>            
+        
+        <p class="p-home-weather-condition__head">
+        今日の予報 
+        </p>
+        <figure class="p-home-weather-condition__icon">
+        ⛅
+        </figure>
+        <p class="p-home-weather-condition__foot">
+          <span class="temp_min">-0.2℃</span>
+          /
+          <span class="temp_max">9.4℃</span>
+        </p>
+    </div> 
 <p>
 明日の予報<br>
 ⛅<br>
-<span class="temp_min">1.9℃</span>
-<span class="temp_max">8.4℃</span>
+<span class="temp_min">4.8℃</span>
+/
+<span class="temp_max">12.5℃</span>
 </p>
 <h2>
 現在の月
@@ -42,46 +58,114 @@
     </div>
     <div class="disp"></div>
   </div>
+  <style>
+  canvas[id*='a']{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.d {
+    background: transparent;
+    width: 36px;
+    height: 36px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #9d9d9d;
+    border-radius: 50%;
+}
+#disp {
+  color: #ffffff;
+}
+.moonAge {
+  position: relative;
+  height: 200px;
+}
+  </style>
+</figure>
   <input style="visibility: hidden; height: 0;display: none;" type='date' id='c' onchange='chg(this.value)'>
 </div>
 
 <div class="weather">
   <dl class="moon">
-    <dt>月龄:24.3
+    <dt>月龄:25.3
     </dt>
   </dl>
 </div>
+</section>
 
-<div class="news">
-<h2>news</h2>
-<a href="/shanggaodi.css" class="c-button">VIEW MORE</a>
-  <div class="new">
-     <a href="n">TOPICS</a> 
-     <a href="n">What's  New</a>
-     <a href="n">PAPR Info</a>
+<div class="l-container">
+  <div class="p-home-news__header">
+    <h2 class="p-home-news__headline op-enOswld">NEWS</h2>
+    <div class="p-home-news__viewall c-button__wrapper op-r op-pc">
+      <a href="/news" class="c-button">VIEW MORE</a>
+      </div>
   </div>
-  <div class="e">
-    <ul class="e">
-      <li type="none"><a href="http:www.kamikochi.or.jp/news/6473/"></a></li>
+
+
+
+  <div class="js-tab_wrapper  p-home-news-tab__wrapper" data-mode="rand">
+    <div  class="js-tab__header p-home-news-tab__header">
+    <a href="js-tab__item p-home-news-tab__item">TOPICS</a> 
+    <a href="js-tab__item p-home-news-tab__item">What's  New</a>
+    <a href="js-tab__item p-home-news-tab__item">PAPR Info</a>
+  </div>
+
+  <div class="js-tab__body p-home-news-tab__body">
+    <ul class="js-tab__block p-home-news-lines__list" style="display: block;">
+      <li class="p-home-news-lines__item">
+        <a href="http:www.kamikochi.or.jp/news/6473/" class="p-home-news-row__wrapper">
+    <div class="js-tab__body p-home-news-tab__body">
+      <ul class="js-tab__block p-home-news-lines__list" style="display: block;">
+        <li class="p-home-news-lines__item">
+          <a href="https://www.kamikochi.or.jp/news/6473/" class="p-home-news-row__wrapper">
+            <div class="p-home-news-row-meta__header">
+              <p class="p-home-news-row-meta__date">2023.11.15</p>
+              <p class="p-home-news-row-meta__category op-topics">TOPICS</p>
+            </div>
+            <p class="p-home-news-row__headline">2023年 第26回上高地閉山式を行いました。</p>
+          </a>
+        </li>
+        <li class="p-home-news-lines__item">
+          <a href="http:www.kamikochi.or.jp/news/6643/" class="p-home-news-row__wrapper">
+          <div class="p-home-news-row-meta__header">
+            <p class="p-home-news-row-meta__date">2023.11.11</p>
+            <p class="p-home-news-row-meta__category op-topics">TOPICS</p>
+          </div>
+      <p class="p-home-news-row__headline">11月15日am11：20より上高地閉山式をYouTubeにてLIVE配信</P>
+          </a>
+       </li>
+
+       <li class="p-home-news-lines__item">
+        <a href="https://www.kamikochi.or.jp/news/6339/" class="p-home-news-row__wrapper">
+          <div class="p-home-news-row-meta__header">
+            <p class="p-home-news-row-meta__date">2023.10.17</p>
+            <p class="p-home-news-row-meta__category op-topics">TOPICS</p>
+          </div>
+          <p class="p-home-news-row__headline">2023年　シーズン営業終了予定のご案内</p>
+        </a>
+       </li>
+       <li class="p-home-news-lines__item"> 
+        <a href="https://www.kamikochi.or.jp/news/6300/"class="p-home-news-row__wrapper">
+          <div class="p-home-news-row-meta__header">
+             <p class="p-home-news-row-meta__date">2023.10.07 </p>
+             <p class="p-home-news-row-meta__category op-topics">TOPICS</p>
+          </div>
+          <p class="p-home-news-row__headline">10月8日 穗髙神社奥宮例大祭［明神池お船祭り］開催</p>
+        </a>
+      </li>
+       <li class="p-home-news-lines__item">
+        <a href="https://www.kamikochi.or.jp/news/6117/" class="p-home-news-row__wrapper">
+          <div class="p-home-news-row-meta__header">
+            <p class="p-home-news-row-meta__date">2023.09.03  </p>
+            <p class="p-home-news-row-meta__category op-topics">TOPICS</p>
+          </div>
+        <p class="p-home-news-row__headline">美しい上高地を未来に残そう　ふるさと納税受付中 11/30まで</p>
+        </a>
+      </li>
     </ul>
-    <div class="w">
-      <p>2023.11.15      TOPICS</p>
-      <P>11月15日am11：20より上高地閉山式をYouTubeにてLIVE配信</P>
-    <li type="none"> <a href="http:www.kamikochi.or.jp/news/6643/"></a></li>
-      <p>2023.11.11   TOPICS</p>
-      <p>11月15日am11：20より上高地閉山式をYouTubeにてLIVE配信</p>
-    <li type="none"><a href="http:www.kamikochi.or.jp/news/6339"></a></li>
-      <p>2023.10.17   TOPICS </p>  
-      <p>2023年　シーズン営業終了予定のご案内</p> 
-      
-    <li type="none"><a href="https://www.kamikochi.or.jp/news/6300/">
-    </a></li>
-    <p>2023.10.07     TOPICS </p>
-    <p>10月8日 穗髙神社奥宮例大祭［明神池お船祭り］開催</p>
-    <li type="none"><a href="https://www.kamikochi.or.jp/news/6117/"></a></li>
-    <p>2023.09.03 TOPICS </p>
-    <p>美しい上高地を未来に残そう　ふるさと納税受付中 11/30まで</p>
   </div>
+
+
 <div class="c-button">
   <a href="news" class="c-button">VIEW MORE</a>
 </div>

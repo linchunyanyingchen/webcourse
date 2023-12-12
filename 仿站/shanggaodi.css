@@ -1,21 +1,38 @@
 .weather{
   font-size: small;
 }
-.p-home-weather__headline op-weather{
+
+.p-home-weather__headline {
   text-align: center;
   font-size: 1rem;
   letter-spacing: 0.1em;
   line-height: 1.5;
 }
+
 h1,h2,h3,h4,h5{
   font-weight: normal;
 }
+
+br{
+  display: none;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+*,::before,::after{
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+}
 h2{
   display: block;
+  font-size: 1.5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-weight: bold;
 }
 .p-home-weather-condition__list{
   flex-wrap: wrap;
@@ -64,9 +81,17 @@ h2{
   text-decoration: none;
   border: 1px solid #bababa; 
   border-radius: 0.6875rem;
-  padding: 0 0.625rem;
+  padding:  0.625rem;
+  transition-duration: 0.3s  ;
   line-height: 2.2727272727;
   background: #fff; 
+  margin-top: 1.5625rem;
+  height: 2.625rem;
+  transition: .3s background ease,.3s color ease;
+}
+.l-section{
+  width: 100%;
+  position: relative;
 }
 .n{
   background-color: #efefef;
@@ -89,15 +114,25 @@ h2{
 .l-container {
   width: 82%;
   margin: 0 auto;
-  text-align: left;
   position: relative
 }
+
+
 *{
   padding: 0;
   margin: 0;
 }
 .p-home-news__header{
   margin-top: 1.25rem;
+  text-align: center;
+}
+.p-home-news__headline {
+    font-size: 2.25rem;
+    line-height: 1.3333333333;
+}
+.op-enOswld {
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
 }
 .p-home-news-tab__header{
   margin-bottom: 1.875rem;
@@ -176,7 +211,7 @@ li{
   text-decoration: none;
 }
 a:-webkit-any-link{
-  color: -webkit-link;
+
   cursor: pointer;
 }
 .p-home-news-row-meta__header{

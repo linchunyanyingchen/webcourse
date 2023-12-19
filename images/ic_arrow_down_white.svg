@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <g id="グループ_54" data-name="グループ 54" transform="translate(-50 -684)">
+    <g id="楕円形_1" data-name="楕円形 1" transform="translate(50 684)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="23" cy="23" r="23" stroke="none"/>
+      <circle cx="23" cy="23" r="22.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-long-arrow-alt-down" data-name="Icon awesome-long-arrow-alt-down" d="M5.322,10.75V2.575A.325.325,0,0,0,5,2.25H3.481a.325.325,0,0,0-.325.325V10.75H1.909a.65.65,0,0,0-.459,1.109l2.33,2.33a.65.65,0,0,0,.919,0l2.33-2.33a.65.65,0,0,0-.459-1.109Z" transform="translate(68.761 698.685)" fill="#fff"/>
+  </g>
+</svg>
